@@ -1,0 +1,33 @@
+			@font-face {
+                font-family: 'radioVF';
+                src:url("../font/radioVF.woff2") format('woff2');
+            }
+            .element {
+  				font-family: 'radioVF';
+			    line-height:1;
+			    font-size: 250px;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 100;
+                color: antiquewhite;
+/*                text-shadow: 0.5px 0.5px 10px antiquewhite;*/
+
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+            .wrapper_3 .element{
+				color: antiquewhite;
+                transition: 1s cubic-bezier(.99,-0.01,0,1));
+/*			    transition-delay: 0.1s;*/
+			}
+			.wrapper_2 .element{
+				color: hotpink;
+                transition: 1s cubic-bezier(.99,-0.01,0,1));
+			    transition-delay: 0.02s;
+			}
+			.wrapper_1 .element{
+				color: mediumpurple;
+				transition: 1s cubic-bezier(.99,-0.01,0,1));
+                transition-delay: 0.06s;
+			}

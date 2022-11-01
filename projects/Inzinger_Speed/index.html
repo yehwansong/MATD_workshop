@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @font-face {
+        font-family: "SpeedVF";
+        src: url("font/SpeedVF.ttf");
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 25px 15px 25px;
+        margin: 0;
+        background: red;
+      }
+
+      .og,
+      .speed {
+        font-family: "SpeedVF";
+        font-size: 20vw;
+        display: block;
+        text-align: center;
+        color: white;
+      }
+
+      ul {
+        list-style: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        font-family: Helvetica, Arial;
+        border: 1px solid #0e1012;
+        font-size: 14px;
+        border-radius: 100px;
+        padding: 5px 15px;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+      }
+
+      li:not(:first-child) {
+        margin-left: 10px;
+      }
+
+      li.active {
+        background: #0e1012;
+        color: white;
+      }
+
+      li:hover {
+        background: #0e1012;
+        color: white;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+        cursor: pointer;
+      }
+
+      a {
+        color: #0e1012;
+        text-decoration: none;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+      }
+
+      li:hover a {
+        color: white;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+      }
+
+      .background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: red;
+        z-index: -1;
+      }
+
+      main {
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      footer {
+        display: flex;
+        font-family: Helvetica, Arial;
+        width: 100%;
+        font-size: 14px;
+        justify-content: space-between;
+      }
+    </style>
+    <script>
+      function downLink() {
+        var imageAddr = "image.jpg";
+        var downloadSize = 5000;
+
+        function map_range(value, low1, high1, low2, high2) {
+          return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
+        }
+
+        var startTime, endTime;
+        var download = new Image();
+
+        startTime = new Date().getTime();
+        var cacheBuster = "?nnn=" + startTime;
+        download.src = imageAddr + cacheBuster;
+
+        download.onload = function () {
+          endTime = new Date().getTime();
+          var duration = (endTime - startTime) / 1000;
+          var speedMbps = ((downloadSize * 8) / duration / 1048576).toFixed(2);
+          if (speedMbps > 50) {
+            speedMbps = 50;
+          }
+          var weight = map_range(speedMbps, 0, 50, 0, 1000);
+
+          console.log(speedMbps);
+
+          document.querySelector(".og").style.fontVariationSettings =
+            '"wght" ' + weight;
+
+          document.querySelectorAll(".speed").forEach(function (el, i) {
+            el.style.fontVariationSettings = '"wght" ' + weight;
+            el.style.fontSize =
+              20 - map_range(speedMbps, 0, 50, 0, i / 10) + "vw";
+            el.style.opacity = 1 - i / 10;
+            el.style.marginLeft = map_range(speedMbps, 0, 50, 0, -i / 3) + "vw";
+            el.style.marginTop = map_range(speedMbps, 0, 50, 0, i / 3) + "vw";
+          });
+        };
+      }
+
+      setInterval(downLink, 10);
+    </script>
+  </head>
+  <body>
+    <main>
+      <div style="position: relative">
+        <div class="og">&nbsp;SPEED</div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+        <div
+          class="speed"
+          style="position: absolute; top: 0; left: 0; z-index: -1"
+        >
+          &nbsp;SPEED
+        </div>
+      </div>
+    </main>
+    <footer>
+      <span>&copy; 2022, Maximilian Inzinger</span>
+      <span>Yehwan Song – Transversal Workshop</span>
+      <span>ECAL MATD</span>
+    </footer>
+  </body>
+</html>

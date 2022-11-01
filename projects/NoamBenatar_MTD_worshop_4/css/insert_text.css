@@ -1,0 +1,11 @@
+
+            @font-face {
+                font-family: 'Psyri';
+                src: url("../font/PsyriVF.woff2") format('woff2');
+            }
+            *{
+			    font-family: 'Psyri';
+			    line-height:1;
+			    font-size: 500px;
+			    font-variation-settings:"wdth" 500
+			}

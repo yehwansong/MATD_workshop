@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url("../font/SuisseNeue-Regular-WebS.woff2") format('woff2');
+}
+
+html, body{
+    margin: 0;
+    overflow: hidden;
+    cursor: crosshair;
+}
+
+#box {
+    position: absolute;
+    top: 80px;
+    left: 200px;
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Custom Font";
+    font-variation-settings: "wght" 1;
+    font-size: 20px;
+    -webkit-text-stroke: 50px black;
+    text-indent: 60px;
+}
+
+#credit {
+    position: absolute;
+    z-index: 200;
+    font-family: "Custom Font";
+    font-size: 20px;
+    text-align: center;
+    top: 40px;
+    width: 100vw;
+    letter-spacing: 1.2pt;
+}

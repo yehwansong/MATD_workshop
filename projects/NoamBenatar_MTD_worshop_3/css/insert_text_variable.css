@@ -1,0 +1,29 @@
+			@font-face {
+                font-family: 'Arkbro';
+                src: url("../font/Arkbro_SMALLVF.woff2") format('woff2-variations');
+            }
+
+           	body{
+				background: black;
+           	}
+            .element {
+  				font-family: 'Arkbro';
+			    line-height:0.9;
+			    font-size: 12vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wdth' 100;
+			    color: rgb(255,56,1);
+			}
+			
+			.wrapper{
+				
+			}
+			.wrapper_1{
+				top: calc(50% - 150px);
+			}
+			.wrapper_2{
+				top: calc(50% + 50px);
+			}
+			.wrapper_3{
+				top: calc(50% + 250px);
+			}

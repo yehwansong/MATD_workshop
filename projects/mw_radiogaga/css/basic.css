@@ -1,0 +1,68 @@
+body{
+/*    background: radial-gradient(circle at center, orange 0, brown 30%, black 80%);*/
+/*
+    background-image: conic-gradient(orange, brown, black);
+*/
+    
+    animation-name: bg;
+    animation-duration: 1.1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bg {
+    0%   {background-color: orange;}
+    50%  {background-color: brown;}
+    100%  {background-color: darkgoldenrod;}
+}
+
+
+
+    html,body{
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+    .element{
+/*        position: absolute;*/
+        position: relative !important;
+        left: 0 !important;
+        display: inline-block;
+    }
+    .wrapper{
+        left: 50%;
+        top: 50%;
+        transform:translate(-50%, -50%);
+        position: absolute;
+    }
+    #slider-range{
+        width: 300px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .fake_scroll_wrapper{
+            position: fixed;
+            left: 0;
+            top: auto;
+            z-index: 100;
+            width: 100%;
+            height: 100%;
+            overflow: scroll;
+            pointer-events: all;
+            bottom: 0;
+        /*pointer-events: none;*/
+    }
+    .fake_scroll{
+        width: 1000%;
+        height: 1000vh;
+        left: 0;
+        top: 0;
+        position: relative;
+    /*pointer-events: none;*/
+    }
+    canvas{
+    display: none;}
+            span.element{
+                position: relative 
+            }

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&display=swap');
+</style>
+    <title></title>
+
+<div class="container">
+    <h1 style="font: Fruktur, cursive">Flower Generator
+        <!-- <small style="font:normal normal lighter 15px Helvetica, sans-serif" >  </small> -->
+    </h1>
+    <div class="avatar-upload">
+        <div class="avatar-edit">
+            <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" />
+            <label for="imageUpload"></label>
+        </div>
+        <div class="avatar-preview">
+            <div id="imagePreview" style="background-image: url(http://i.pravatar.cc/500?img=7);">
+            </div>
+        </div>
+    </div>
+</div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<!-- BASIC!!! -->
+
+    <link rel="stylesheet" type="text/css" href="css/basic.css">
+
+    <script type="text/javascript" src="js/basic.js"></script>
+
+<!-- CSS STYLES FOR BLEND MODE -->
+
+    <link rel="stylesheet" type="text/css" href="css/basic_normal.css">
+    <link rel="stylesheet" type="text/css" href="css/basic_hard-light.css">
+    <link rel="stylesheet" type="text/css" href="css/basic_luminosity.css">
+    <link rel="stylesheet" type="text/css" href="css/basic_multiply.css">
+    <link rel="stylesheet" type="text/css" href="css/basic_difference.css">
+
+
+<!-- SCRIPTS VARIANTS -->
+
+    <script type="text/javascript" src="js/default.js"></script>
+
+    <script type="text/javascript" src="js/simple_05.js"></script>
+    <script type="text/javascript" src="js/simple_10.js"></script>
+    <script type="text/javascript" src="js/simple_20.js"></script>
+    <script type="text/javascript" src="js/simple_40.js"></script>
+    <script type="text/javascript" src="js/simple_80.js"></script>
+
+    <script type="text/javascript" src="js/scale_01.js"></script>
+    <script type="text/javascript" src="js/scale_02.js"></script>
+    <script type="text/javascript" src="js/scale_03.js"></script>
+
+    <script type="text/javascript" src="js/spiral_01.js"></script>
+    <script type="text/javascript" src="js/spiral_02.js"></script>
+    <script type="text/javascript" src="js/spiral_03.js"></script>
+
+    <script type="text/javascript" src="js/tri_01.js"></script>
+    <script type="text/javascript" src="js/tri_02.js"></script>
+
+    <script type="text/javascript" src="js/star_01.js"></script>
+
+    <script type="text/javascript" src="js/translatex_01.js"></script>
+    <script type="text/javascript" src="js/translatex_02.js"></script>
+
+</head>
+<body>
+    <div class='wrapper'></div>
+
+
+
+    <div class='css_option'> Filter:    
+      <!-- <label for="filter"> Filter</label> -->
+      <input type="radio" id="css1" name="filter" value="css1" checked> 
+      <input type="radio" id="css2" name="filter" value="css2"> 
+      <input type="radio" id="css3" name="filter" value="luminosity"> 
+      <input type="radio" id="css4" name="filter" value="hard-light"> 
+      <input type="radio" id="css5" name="filter" value="difference"> 
+    </div>
+
+    <div class='js_option'> Transform:  
+      <!-- <label for="transform"> Transform</label> -->
+      <input type="radio" id="js1 " name="transform" value="default" checked> 
+      <input type="radio" id="js2" name="transform" value="scale"> 
+      <input type="radio" id="js3" name="transform" value="scale"> 
+      <input type="radio" id="js4" name="transform" value="scale"> 
+      <input type="radio" id="js5" name="transform" value="simple"> 
+      <input type="radio" id="js6" name="transform" value="simple"> 
+      <input type="radio" id="js7" name="transform" value="simple"> 
+      <input type="radio" id="js8" name="transform" value="simple"> 
+      <input type="radio" id="js9" name="transform" value="simple"> 
+      <input type="radio" id="js10" name="transform" value="spiral"> 
+      <input type="radio" id="js11" name="transform" value="spiral"> 
+      <input type="radio" id="js12" name="transform" value="spiral"> 
+      <input type="radio" id="js13" name="transform" value="tri"> 
+      <input type="radio" id="js14" name="transform" value="tri"> 
+      <input type="radio" id="js15" name="transform" value="star"> 
+      <input type="radio" id="js16" name="transform" value="transl"> 
+      <input type="radio" id="js17" name="transform" value="transl">
+      
+    </div>
+
+    <pre id ="hashTag"></pre>
+
+
+</body>
+</html>

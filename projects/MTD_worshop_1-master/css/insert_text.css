@@ -1,0 +1,41 @@
+
+            @font-face {
+                font-family: 'UTOPIA-Regular';
+                src: url("../font/UTOPIA-Regular.woff2") format('woff2');
+            }
+            @font-face {
+                font-family: 'ANSWERS-Regular';
+                src: url("../font/ANSWERS-Regular.woff2") format('woff2');
+            }
+             @font-face {
+                font-family: 'DYSTOPIA-Regular';
+                src: url("../font/DYSTOPIA-Regular.woff2") format('woff2');
+            }
+            .wrapper_1 .element{
+			    font-family: 'UTOPIA-Regular';
+			    line-height:1;
+			    font-size: 20vw;
+			    transform-origin: top;
+			}
+            .wrapper_2 .element{
+			    font-family: 'ANSWERS-Regular';
+			    line-height:1;
+			    font-size: 20vw;
+			    transform-origin: bottom;
+			}
+				}
+            .wrapper_3 .element{
+			    font-family: 'DYSTOPIA-Regular';
+			    line-height:1;
+			    font-size: 20vw;
+			    transform-origin: bottom;
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+			img.bg {
+				width: 100vw;
+				height: auto;
+				position: absolute;
+			}

@@ -1,0 +1,37 @@
+
+            @font-face {
+                font-family: 'slantoVF';
+                src: url("../font/slantoVF.woff2") format('woff2-variations');
+            }
+            body{
+            	background: red;
+
+            }
+            *{
+			    font-family: 'slantoVF';
+			    line-height:1;
+			    letter-spacing: 0;
+			    font-variation-settings: 'ital' 0, 'wdth' 0;
+
+
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+			.wrapper_1 .element{
+				color: white;
+			    font-size: 35vw;
+			}
+
+			.wrapper_2 .element{
+				color: yellow;
+			    font-size: 35vw;
+			}
+
+			.wrapper_3 .element{
+				color: darkblue;
+			    font-size: 35vw;
+			}
+			
+
+			*/

@@ -1,0 +1,14 @@
+			@font-face {
+                font-family: '****';
+                src: url("../font/****.woff2") format('woff2');
+            }
+            .element {
+  				font-family: '****';
+			    line-height:1;
+			    font-size: 200px;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 300, 'wdth' 0
+			}
+			.wrapper{
+				white-space: nowrap;
+			}

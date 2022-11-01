@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      @font-face {
+        font-family: "ALS";
+        src: url("font/ALSVF.ttf");
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html,
+      body {
+        height: 100%;
+      }
+
+      body {
+        background: white;
+        display: flex;
+        flex-direction: column;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        align-items: center;
+        justify-content: center;
+        padding: 25px 25px 15px 25px;
+        margin: 0;
+      }
+
+      div {
+        font-family: "ALS";
+        font-size: 20vw;
+        display: block;
+        text-align: center;
+      }
+
+      span {
+        display: block;
+      }
+
+      ul {
+        list-style: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        display: inline-block;
+        font-family: Helvetica, Arial;
+        border: 1px solid #0e1012;
+        font-size: 14px;
+        border-radius: 100px;
+        padding: 5px 15px;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+      }
+
+      li:not(:first-child) {
+        margin-left: 10px;
+      }
+
+      li.active {
+        background: #0e1012;
+        color: white;
+      }
+
+      li:hover {
+        background: #0e1012;
+        color: white;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+        cursor: pointer;
+      }
+
+      a {
+        color: #0e1012;
+        text-decoration: none;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+      }
+
+      li:hover a {
+        color: white;
+        transition: 0.2s cubic-bezier(0.03, 0.64, 0.57, 1);
+      }
+
+      main {
+        flex-grow: 1;
+        flex-shrink: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      canvas {
+        position: absolute;
+        top: 0;
+        left: 0;
+        pointer-events: none;
+        display: none;
+        z-index: -1;
+      }
+
+      .tag {
+        color: #0e1012;
+      }
+
+      .nacht {
+        color: white;
+      }
+
+      footer {
+        display: flex;
+        font-family: Helvetica, Arial;
+        width: 100%;
+        font-size: 14px;
+        justify-content: space-between;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div>
+        <div class="tag">TAG</div>
+        <div class="nacht" style="margin-top: -5%">NBCHS</div>
+      </div>
+    </main>
+    <canvas></canvas>
+    <footer>
+      <span>&copy; 2022, Maximilian Inzinger</span>
+      <span>Yehwan Song – Transversal Workshop</span>
+      <span>ECAL MATD</span>
+    </footer>
+  </body>
+  <script>
+    var video = document.createElement("video");
+    var canvas = document.querySelector("canvas");
+    var context = canvas.getContext("2d", { willReadFrequently: true });
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+    context.scale(-1, 1);
+    context.translate(-canvas.width, 0);
+
+    var aspectRatio;
+
+    function map_range(value, low1, high1, low2, high2) {
+      return low2 + ((high2 - low2) * (value - low1)) / (high1 - low1);
+    }
+
+    navigator.mediaDevices
+      .getUserMedia({
+        audio: false,
+        video: {
+          facingMode: "user",
+        },
+      })
+      .then((stream) => {
+        video.srcObject = stream;
+        aspectRatio = stream.getVideoTracks()[0].getSettings().aspectRatio;
+        video.play();
+      });
+
+    renderFrame();
+
+    function renderFrame() {
+      if (window.innerWidth / window.innerHeight > 1) {
+        context.drawImage(
+          video,
+          0,
+          Math.round((canvas.height - canvas.height * aspectRatio) / 2),
+          canvas.width,
+          Math.round(canvas.height * aspectRatio)
+        );
+      } else {
+        context.drawImage(
+          video,
+          Math.round((canvas.width - canvas.width * aspectRatio) / 2),
+          0,
+          Math.round(canvas.width * aspectRatio),
+          canvas.height
+        );
+      }
+      var imgData = context.getImageData(0, 0, canvas.width, canvas.height);
+
+      let brightness = parseInt(
+        (imgData.data[0] + imgData.data[1] + imgData.data[2]) / 3
+      );
+
+      document.querySelector("body").style.background =
+        "hsl(210, 13%, " + Math.abs(brightness) + "%)";
+
+      document.querySelector("div").style.fontVariationSettings =
+        "'wght'" + map_range(brightness, 0, 170, 0, 1000);
+
+      setTimeout(function () {
+        renderFrame();
+      });
+    }
+  </script>
+</html>

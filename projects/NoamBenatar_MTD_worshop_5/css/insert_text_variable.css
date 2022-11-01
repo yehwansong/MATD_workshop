@@ -1,0 +1,28 @@
+			@font-face {
+                font-family: 'bumpy';
+                src: url("../font/bumbyVF.woff2") format('woff2-variations');
+            }
+
+           	body{
+				background: rgb(255,234,0);
+           	}
+            .element {
+  				font-family: 'bumpy';
+			    line-height:1;
+			    font-size: 20vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 400;
+			    text-align: center;
+			    color: rgb(255,56,1);
+			}
+			
+			.wrapper{
+				hite-space: nowrap;
+			}
+
+			.wrapper_1{
+				top: calc(50% - 9vw);
+			}
+			.wrapper_2{
+				top: calc(50% + 9vw);
+			}

@@ -1,0 +1,63 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url("../font/SuisseNeue-Regular-WebS.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Custom Font";
+    src: url("../font/SuisseNeue-RegularItalic-WebS.woff2") format('woff2');
+    font-style: italic;
+}
+
+html, body{
+    margin: 0;
+    overflow: hidden;
+    background: rgb(238, 238, 238);
+    height: 100%;
+    color: black;
+    cursor: crosshair;
+}
+
+body {
+    position: relative;
+}
+
+#box {
+    padding: 120px 30px 0 30px;
+    line-height: 1.2;
+    font-family: "Custom Font";
+    font-size: 70px;
+    text-align: center;
+    display: block;
+    height: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+#box span.letter {
+    -webkit-text-stroke: 50px black;
+}
+
+#shadow {
+    position: absolute;
+    z-index: 200;
+    background: black;
+    background: linear-gradient(0deg, rgba(0, 0, 0, .3) 0%, rgba(0, 0, 0, 0) 100%);
+    width: 100vw;
+    height: 80px;
+    bottom: 0;
+}
+
+#credit {
+    position: absolute;
+    z-index: 200;
+    font-family: "Custom Font";
+    font-style: italic;
+    font-size: 35px;
+    text-align: center;
+    top: 40px;
+    width: 100vw;
+}

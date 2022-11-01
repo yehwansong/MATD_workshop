@@ -1,0 +1,10 @@
+
+@font-face {
+	font-family: 'oxymore';
+	src: url("../font/OxymoreJahnVF.woff") format('woff');
+}
+*{
+	font-family: 'oxymore';
+	line-height:1;
+	font-size: 5em;
+}

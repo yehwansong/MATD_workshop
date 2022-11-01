@@ -1,0 +1,16 @@
+
+            @font-face {
+                font-family: 'font/GentiumBasic';
+                src: url("../font/GentiumBasic-Regular.woff2") format('woff2');
+            }
+            *{
+			    font-family: 'font/GentiumBasic';
+			    line-height:1;
+			    font-size: 200px;
+                color: whitesmoke;
+                background: black;
+            
+			}
+			.wrapper{
+				white-space: nowrap; 
+			}

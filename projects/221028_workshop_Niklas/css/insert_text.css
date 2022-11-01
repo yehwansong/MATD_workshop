@@ -1,0 +1,14 @@
+
+            /*@font-face {
+                font-family: 'Comic Sans MS';
+                src: url("../font/Cabin-VariableFont.woff2") format('woff2');
+            }*/
+            *{
+			    font-family: 'Comic Sans MS';
+			    line-height:1;
+			    font-size: 150px;
+				
+			}
+			.wrapper{
+				white-space: nowrap;
+			}

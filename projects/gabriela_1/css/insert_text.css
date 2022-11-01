@@ -1,0 +1,15 @@
+
+            @font-face {
+                font-family: 'ABCArizonaFlare-Bold';
+                src: url("../font/ABCArizonaFlare-Bold.otf") format('otf');
+            }
+            *{
+			    font-family: 'ABCArizonaFlare-Bold';
+			    line-height:1;
+			    font-size: 100px;
+
+			}
+
+			.wrapper{
+				white-space: nowrap;
+			}

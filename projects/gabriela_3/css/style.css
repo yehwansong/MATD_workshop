@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*box-sizing: border-box;*/
+    text-align:centre;
+
+}
+
+html, body {
+        min-height: 100vh;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        justify-content: center;
+        overflow: auto;
+        /*border: solid 2px blue; */
+        align-items: center;
+        background:#F2F1ED;
+        }
+
+h1 {
+    font-family: 'helvetica';
+    font-weight: 400;
+    font-color: #3D3D3D;
+}
+
+h2{
+    /*display: flex;*/
+    /*flex-direction: column;*/
+    /*justify-content: center;*/
+    color: ##3D3D3D;
+    font-family: serif;
+    font-size: 15px;
+    font-weight: 200;
+
+}
+
+.flex-container {
+    display: flex;
+    min-height: 50vh;
+    max-width: 71%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+    top: 10vh;
+    bottom: 20vh;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    /*border: solid 2px yellowgreen;*/
+
+
+}
+.container {
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    /*border: solid 2px green;*/
+
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+.drop-targets {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+
+}
+
+.item {
+    /*height: auto;*/
+    /*width: auto;*/
+    /*display: flex;*/
+    align-items: center;
+    font-color: #3D3D3D;
+}
+
+.box {
+    min-height: 100px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70px;
+    flex-basis: 30%;
+    /*border: solid 1px hotpink;*/
+    margin: 1px;
+    /* align items in the box */
+}
+
+
+.drag-over {
+    border: dashed 1px lightgray;
+}
+
+
+
+
+}
+
+.hide {
+    display: none;
+}

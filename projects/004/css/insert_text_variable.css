@@ -1,0 +1,10 @@
+@font-face {
+	font-family: 'thoseCR';
+	src: url("../font/Those_circleVF.woff") format('woff');
+}
+
+@font-face {
+	font-family: 'thoseSQ';
+	src: url("../font/Those_squareVF.woff") format('woff');
+}
+

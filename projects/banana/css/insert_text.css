@@ -1,0 +1,18 @@
+
+            @font-face {
+                font-family: 'Cabin-VariableFont';
+                src: url("../font/NarkissBlock-VF.woff2") format('woff2');
+            }
+            *{
+			    font-family: 'Cabin-VariableFont';
+			    line-height:1;
+			    font-size: 500px;
+
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+			.element_1:hover{
+				color:blue;
+			}

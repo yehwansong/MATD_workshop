@@ -1,0 +1,22 @@
+
+            @font-face {
+                font-family: 'AmmaGrotesk';
+                src: url("../font/AmmaGrotesk-Regular.woff2") format('woff2');
+            }
+            *{
+			    font-family: 'AmmaGrotesk';
+			    line-height:1;
+			    font-size: 200px;
+			    color: blue;
+			    font-variaton-settings: ;
+
+			    
+			}
+			.wrapper{
+				white-space: nowrap;
+				
+		
+			}
+			.element{
+				transition: 4s cubic-bezier(.24,.08,.86,.29)
+			}

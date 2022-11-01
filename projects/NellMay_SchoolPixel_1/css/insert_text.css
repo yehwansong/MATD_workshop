@@ -1,0 +1,17 @@
+
+            @font-face {
+                font-family: 'test-national-2-extrabold-italic';
+                src: url("../font/test-national-2-extrabold-italic.woff2") format('woff2');
+            }
+            *{
+			    font-family: 'test-national-2-extrabold-italic';
+			    line-height:1;
+			    font-size: 80px;
+			    text-shadow: 2px 10px #faff94;
+			    text-decoration: 150px blue double underline;
+			   
+
+			}
+			.wrapper{
+				white-space: nowrap;
+			}

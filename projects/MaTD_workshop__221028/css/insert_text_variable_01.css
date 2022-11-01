@@ -1,0 +1,27 @@
+			@font-face {
+                font-family: 'Piazzolla', serif;
+            }
+            .element {
+  				font-family: 'Piazzolla';
+			    line-height:1;
+			    font-size: 200px;
+			    letter-spacing: 500;
+			    font-variation-settings: 'wght' 100;
+			    color: white;
+  				text-shadow: 0px 0px 50px rgb(61,72,184);
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+			/*.wrapper_3{*/
+				/*transform: translate(0%, 0%) translateY(0%)*/
+			/*}*/
+			/*.wrapper_4{*/
+				/*transform: translate(0%, 0%) translateY(0%)*/
+			/*}*/
+			/*.wrapper_5{*/
+				/*transform: translate(0%, 0%) translateY(0%)*/
+			/*}*/
+			/*.wrapper_6{*/
+				/*transform: translate(0%, 0%) translateY(0%)*/
+			/*}*/

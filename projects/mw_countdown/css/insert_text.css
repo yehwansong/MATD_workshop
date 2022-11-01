@@ -1,0 +1,18 @@
+
+            @font-face {
+                font-family: 'isabookman';
+                src: url("../font/isabookman-Regular.woff2") format('woff2');
+            }
+            
+            *{
+			    font-family: 'isabookman';
+			    line-height:1;
+			    font-size: 100px;
+                letter-spacing: -1px;
+                color: antiquewhite;
+                text-shadow: 1px 1px 20px antiquewhite;
+
+            }
+			.wrapper{
+				white-space: nowrap;
+			}

@@ -1,0 +1,24 @@
+
+            @font-face {
+                font-family: 'FuturaStd-BoldOblique';
+                src: url("../font/FuturaStd-BoldOblique.otf") format('otf');
+            }
+            *{
+			    font-family: 'SangBleuKingdomEDU';
+			    line-height:1;
+			    font-size: 500px;
+			    color: black;
+			    
+			   			    
+
+			    			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+			.element{
+				transition: 0.1s cubic-bezier(0,0,1,1)
+			}
+			.warpper_2{
+				
+			}

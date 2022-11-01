@@ -1,0 +1,19 @@
+
+  @font-face {
+        font-family: 'TheinhardtPan-Regular.otf';
+        src: url("../font/TheinhardtPan-Regular.otf") format('otf');
+    }
+    
+    *{
+		font-family: 'TheinhardtPan-Regular';
+		line-height:1;
+		font-size: 100px;
+		color: white;
+		text-decoration-line: line-through;
+		text-decoration-color: black;
+		text-decoration-thickness: 15px;
+	}
+
+	.wrapper {
+		white-space: nowrap;
+	}

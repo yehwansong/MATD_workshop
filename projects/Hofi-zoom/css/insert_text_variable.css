@@ -1,0 +1,19 @@
+			@font-face {
+                font-family: 'zoomGX';
+                src: url("../font/zoomGX.ttf");
+            }
+            .element {
+  				font-family: 'zoomGX';
+			    line-height:1;
+			    font-size: 35px;
+			    letter-spacing: 0;
+			    ont-feature-settings: "calt" 1, "liga" 1, "rlig" 1, "rvrn" 1, "kern" 1, "rclt" 1;
+			    font-variation-settings: 'wght' 100;
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+			.my-text {
+	f
+}

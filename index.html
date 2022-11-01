@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <link rel="shortcut icon" type="image/png" href="fav-01.png"/>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html,body{
+			width: 100vw;
+			height: 100vh;
+		}
+		.elem{
+    position: absolute;
+    border: 0.25px solid #eeeeee;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: block;
+    font-size: 1vw;
+    color: black;
+    text-align: center;
+    line-height: 14.5vw;
+    font-family: sans-serif;
+    transition: filter 0.25s;
+    overflow:hidden;
+		}
+		.elem:hover{
+			filter: invert(1)
+		}
+	</style>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		var unit = 15
+		get_data_array()
+		function get_data_array() {
+				data_array =
+					[
+					    [
+					        "Norma Elzoghbi\nDystopianThumbnails-01.jpg\nUtopian_Futures_Folder\nScreen ",
+					        ".",
+					        "André Teixeira\nandre_thumbnail.jpg\nflower\nIssues to be fixed",
+					        "",
+					        "",
+					        "",
+					        ".",
+					        "NoamBenatar\nTumbnail5.jpg\nNoamBenatar_MTD_worshop_5",
+					        "."
+					    ],
+					    [
+					        ".",
+					        "Mac_Wang\nmw_radiogaga.jpg\nmw_radiogaga",
+					        "NoamBenatar\nTumbnail3.jpg\nNoamBenatar_MTD_worshop_3",
+					        ".",
+					        "Edouard Berard & Juan Jun Feng & Minjong Kim\nthum_EMJ.png\n004",
+					        "Maximilian Inzinger\nInzinger_Speed.png\nInzinger_Speed",
+					        "Anna-Sophia Pohlmann\nMTD_worshop_1-master_Text_OKCOOL.png\nMTD_worshop_1-master_Text_OKCOOL",
+					        "Paul_Sturm\nexperiment_E.png\nexperiment_E",
+					        "Pauline_Heppeler\nPH_2.png\nPH_2\n\n"
+					    ],
+					    [
+					        "Anna-SophiaPohlmann \nMTD_worshop_1-master_VariableFont_Pearl.png\nMTD_worshop_1-master_VariableFont_Pearl",
+					        "Antoine_Pasi\nantoine_pasi_image.jpg\nMTD_worshop_0-master",
+					        "Þorgeir K. Blöndal\ntkb_300x300.jpg\ntkb_1",
+					        "Mac_Wang\nmw_countdown.jpg\nmw_countdown",
+					        "Eran_Ben_Barak\neran_1.png\nEran_1",
+					        "NoamBenatar\nTumbnail4.jpg\nNoamBenatar_MTD_worshop_4",
+					        "Paul_Sturm\nexperiment_F.png\nexperiment_F",
+					        "",
+					        ".",
+					        "."
+					    ],
+					    [
+					        "Paul_Sturm\nexperiment_A.png\nexperiment_A\nmobile only",
+					        "gabriela_jaime\ngabriela_3.png\ngabriela_3\ndoesn't work on mobile",
+					        "Paul_Sturm\nexperiment_C.png\nexperiment_C\nmobile only",
+					        "Hunor Vári\nBanana.png\nBanana",
+					        "Lucrezia_Noro\nLN_Project_1.png\nMTD_workshop-Project1\n",
+					        "gabriela_jaime\ngabriela_1.png\ngabriela_1\nworks on mobile but its not responsive so it looks cut-off.",
+					        "Eran_Ben_Barak\neran_2.png\nEran_2",
+					        "Simon Memel\nTransima.png\nTransima",
+					        "Anna-Sophia Pohlmann\nMTD_worshop_1-master_VariableFont_Perspektive_01.png\nMTD_worshop_1-master_VariableFont_Perspektive_01",
+					        "Mirela Belcheva\nDimensions_Mirela.png\nMaTD_workshop__221028"
+					    ],
+					    [
+					        ".",
+					        "Paul_Sturm\nexperiment_B.png\nexperiment_B\nmobile only",
+					        "Niklas Herrmann\nface_explosion.jpg\n221028_workshop_Niklas",
+					        "Paul_Sturm\nexperiment_D.png\nexperiment_D\nmobile only",
+					        "Anna-Sophia Pohlmann\nMTD_worshop_1-master_Text_right-hand.png\nMTD_worshop_1-master_Text_right-hand",
+					        "Pauline_Heppeler\nPH_2.png\nPH_1\nnot working on safari",
+					        "Lucrezia Noro\nLN_Project_3.png\nMTD_workshop-Project3\n",
+					        "",
+					        "gabriela_jaime\ngabriela_2.png\ngabriela_2\ndoes not work on mobile"
+					    ],
+					    [
+					        ".",
+					        ".",
+					        ".",
+					        "Anna-SophiaPohlmann\nMTD_worshop_1-master_VariableFont_Perspektive_02.png\nMTD_worshop_1-master_VariableFont_Perspektive_02",
+					        ".",
+					        "Hofi\nHofi-smol.jpg\nHofi-zoom\nOnly works on mobile",
+					        "Lana Soufeh\nIMG_4118.jpg\nMTD_workshop\nWorks on mobile",
+					        ".",
+					        "Lucrezia Noro\nLN_Project_4.png\nMTD_workshop-Project4\n",
+					        "."
+					    ],
+					    [
+					        ".",
+					        ".",
+					        "",
+					        ".",
+					        ".",
+					        "Maximilian Inzinger\nInzinger_Webcam.png\nInzinger_Webcam\nnot working on mobile + safari",
+					        ".",
+					        "Nell_May\nnellmay_school-pixel_01.png\nnellmay_school-pixel_01\n ",
+					        ".",
+					        "."
+					    ],
+					    [
+					        ".",
+					        ".",
+					        ".",
+					        ".",
+					        ".",
+					        "",
+					        "",
+					        ".",
+					        "Nell_May\nnellmay_school-pixel_02.png\nnellmay_school-pixel_02\n ",
+					        "."
+					    ]
+					]
+					
+					for (var i = 0; i < data_array.length; i++) {
+						for (var j = 0; j < data_array[i].length; j++) {
+							var name = '' 
+							var img = '' 
+							var link = '' 
+							if(data_array[i][j].split('\n').length>1){
+								name = data_array[i][j].split('\n')[0]
+							}
+							if(data_array[i][j].split('\n').length>2){
+								img = data_array[i][j].split('\n')[1].split('\n')[0]
+							}
+							if(data_array[i][j].split('\n').length>2){
+								link = data_array[i][j].split('\n')[2].split('\n')[0]
+							}
+							console.log(data_array[i][j].split('\n'))
+							console.log(name)
+							console.log(img)
+							console.log(link)
+							$('.wrapper').append('<a href="projects/'+link+'" target="_blank" class="elem elem_'+i+'_'+j+'">'+name+'</a>')
+							$('.elem_'+i+'_'+j).css({'background-image':'url(img/'+img+')'})
+							$('.elem_'+i+'_'+j).css({'left':j*unit+'vw'})
+							$('.elem_'+i+'_'+j).css({'top':i*unit+'vw'})
+							$('.elem_'+i+'_'+j).css({'width':unit+'vw'})
+							$('.elem_'+i+'_'+j).css({'height':unit+'vw'})
+						}
+					}
+							$('.wrapper').css({'height':unit*(data_array.length-1)+'vw'})
+							$('.wrapper').css({'width':unit*(data_array[0].length-1)+'vw'})
+
+
+		}
+	})
+	</script>
+	<style type="text/css">
+	</style>
+</head>
+<body>
+	<div class="wrapper"></div>
+</body>
+</html>

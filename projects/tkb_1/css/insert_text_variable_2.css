@@ -1,0 +1,30 @@
+			/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap');*/
+
+			/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0..1,100..900&display=swap');*/
+
+			/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');*/
+
+			@font-face {
+                font-family: 'tennis2VF';
+                src: url("../font/tennis2VF.woff2") format('woff2');
+            }
+           
+            .element {
+  				font-family: 'tennis2VF';
+			    line-height:1;
+			    font-size: 700px;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 100,'ital' 1;
+			    color: hotpink;
+			    /*text-shadow: 0px 0px 50px greenyellow;*/
+			   
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+
+			}
+			.element{
+				transition: cubic-bezier(.24,.08,.86,.29)
+			}

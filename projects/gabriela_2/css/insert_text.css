@@ -1,0 +1,34 @@
+ @font-face {
+                font-family: 'Futura';
+                src: url("../font/Futura.ttc") format('ttc');
+            }
+            *{
+			    font-family: 'Futura';
+			    line-height:1;
+			    font-size: 3vw;
+			    color: #3D3D3D;
+			    /*text-shadow: 2px 2px 15px lightgray;*/
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+
+
+			.element_0{
+				transition: 1s ease;
+
+				
+
+			}
+
+			.element_1{
+				transition: 2s ease;
+				
+			}
+
+			.element_2{
+				transition: 3.5s ease;
+				
+			}
+
+		

@@ -1,0 +1,18 @@
+			@font-face {
+                font-family: 'TransimaVF';
+                src: url("../font/TransimaVF.woff2") format('woff2');
+            }
+            body{
+            	background-color: #ffc4c4;
+            }
+            .element {
+  				font-family: 'TransimaVF';
+			    line-height:1;
+			    font-size: 200px;
+			    letter-spacing: 0;
+			    color: #c90e0e;
+			    font-variation-settings: 'wdth' 100
+			}
+			.wrapper{
+				white-space: nowrap;
+			}

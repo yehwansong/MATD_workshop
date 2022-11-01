@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "Custom Font";
+    src: url("../font/SuisseNeue-Regular-WebS.woff2") format('woff2');
+}
+
+@font-face {
+    font-family: "Custom Font";
+    src: url("../font/SuisseNeue-RegularItalic-WebS.woff2") format('woff2');
+    font-style: italic;
+}
+
+html, body{
+    margin: 0;
+    overflow: hidden;
+    background: rgb(0, 0, 0);
+    height: 100%;
+    color: rgb(224, 224, 224);
+}
+
+body {
+    position: relative;
+}
+
+#box {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    transform-origin: 0 0;
+    rotate: 90deg;
+    left: 50%;
+    top: 50%;
+    line-height: 1.05;
+    font-family: "Custom Font";
+    font-variation-settings: "wght" 100;
+    font-size: 11vh;
+    text-align: center;
+    display: block;
+    color: rgb(224, 224, 224);
+    position: absolute;
+    -webkit-text-stroke: 50px rgb(224, 224, 224);
+}
+
+#shadow {
+    position: absolute;
+    z-index: 200;
+    background: black;
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(0,0,0,0) 100%);
+    width: 100vw;
+    height: 80px;
+    bottom: 0;
+}
+
+#overlay {
+    position: absolute;
+    z-index: 500;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    text-align: center;
+}
+
+#overlay.hidden {
+    display: none;
+}
+
+#overlay #text {
+    font-family: "Custom Font";
+    font-size: 35px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-80px);
+}

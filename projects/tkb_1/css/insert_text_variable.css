@@ -1,0 +1,59 @@
+			/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@1,800&display=swap');*/
+
+			/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0..1,100..900&display=swap');*/
+
+			/*@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100..900&display=swap');*/
+
+			@font-face {
+                font-family: 'tennisVF';
+                src: url("../font/tennisVF.woff2") format('woff2');
+            }
+           
+            .element {
+			    line-height:0.8;
+			    font-size: 50vh;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 100;
+			    color: greenyellow;
+			    /*text-shadow: 0px 0px 50px greenyellow;*/
+			}
+			
+			@font-face {
+                font-family: 'tennis2VF';
+                src: url("../font/tennisSVF.woff2") format('woff2');
+            }
+           
+            .element {
+			    /*text-shadow: 0px 0px 50px greenyellow;*/
+			}
+			
+
+
+			.wrapper{
+				white-space: nowrap;
+			}
+
+
+			.element{
+				transition:font-variation-settings cubic-bezier(.24,.08,.86,.29)
+			}
+			.wrapper_1 .element{
+  				font-family: 'tennisVF';
+  				font-variation-settings: 'wght' 100;
+				color: transparent;
+				text-shadow: 0px 0px 1px whitesmoke;
+				transition:font-variation-settings cubic-bezier(.24,.08,.86,.29)
+			}
+
+			.wrapper_2 .element{
+  				font-family: 'tennisVF';
+  				font-variation-settings: 'wght' 100;
+				color: greenyellow;
+			}
+			.wrapper_3 .element{
+  				font-family: 'tennis2VF';
+  				font-variation-settings: 'wght' 100;
+  				color: blueviolet;
+			}
+
+			

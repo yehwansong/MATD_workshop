@@ -1,0 +1,69 @@
+			@font-face {
+                font-family: 'fuckVF';
+                src: url("../font/fuckVF.woff2") format('woff2');
+            }
+            .element {
+  				font-family: 'fuckVF';
+			    line-height:1;
+			    font-size: 120px;
+			    font-variation-settings: 'wght' 700, 'wdth' 100;
+			    color: #ffe9ec;
+			    text-shadow: 0px 0px 3px red;
+
+			    
+			}
+
+			.wrapper{
+				white-space: nowrap;
+				transition: 0.8s cubic-bezier(.67,.13,.36,.95);
+			}
+
+
+			.wrapper_2{ letter-spacing: 400px;
+				position: relative;
+				-webkit-animation: flash linear 1s infinite;
+				animation: flash linear 1s infinite;
+				
+			}
+ 			.wrapper_1 {
+ 				letter-spacing: 60px;
+ 				transition: 0.2s cubic-bezier(.38,.79,.47,.99)
+ 			}
+
+
+ 		
+
+			@-webkit-keyframes flash {
+				0% { opacity: 1; } 
+				50% { opacity: .4; } 
+				100% { opacity: 1; }
+			}
+			@keyframes flash {
+				0% { opacity: 1; } 
+				50% { opacity: .4; } 
+				100% { opacity: 1; }
+			}
+/*
+			.wrapper_2 {
+-webkit-filter: drop-shadow(2px 2px 3px yellowgreen)
+                  drop-shadow(-2px -2px 3px yellowgreen);
+  filter: drop-shadow(2px 2px 3px yellowgreen) 
+          drop-shadow(-2px -2px 3px yellowgreen);	
+			}
+
+			.wrapper_1:hover {
+				opacity: 1;
+	-webkit-animation: flash infinite;
+	animation: flash 1.5s;
+			}
+
+@keyframes flash {
+	0% {
+		opacity: .4;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+*/
+/* Shine */

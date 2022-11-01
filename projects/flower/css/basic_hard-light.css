@@ -1,0 +1,14 @@
+
+
+    .css4 .img{;
+        /*width: 400px;*/
+        /*height: 50%;*/
+        z-index: 1;
+        mix-blend-mode: hard-light;
+        /*left: auto;*/
+        position: absolute;
+        background-image: url(../img/img1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom;
+    }

@@ -1,0 +1,81 @@
+			@font-face {
+                font-family: 'LenzbourgmixVF';
+                src: url("../font/LenzbourgmixVF.woff2") format('woff2');
+            }
+
+            @font-face {
+                font-family: 'FuturaStd-BoldOblique';
+                src: url("../font/LenzbourgVF.woff2") format('woff2');
+            }
+
+
+
+            .division_1 .wrapper .element {
+  				font-family: 'LenzbourgmixVF';
+			    line-height:1;
+			    font-size: 8.8vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 0, 'wdth' 0;
+			    color:white;
+			    blur: 8px;
+			   
+
+			}
+
+			 .division_5 .wrapper .element {
+  				font-family: 'FuturaStd-BoldOblique';
+			    line-height:1;
+			    font-size: 20vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 0, 'wdth' 0;
+			    color:white;
+			    blur: 8px;
+			   
+
+			}
+            /*.division_2 .wrapper .element {
+  				font-family: 'Inter';
+			    line-height:1;
+			    font-size: 10vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 0, 'wdth' 0;
+			    color:white;
+			    blur: 8px;
+			   
+
+			}*/
+			.wrapper{
+				white-space: nowrap;
+			}
+
+			.element{
+				transition: 0.2s cubic-bezier(.99,0,.01,.99)
+			}
+			/*.wrapper_1{
+			    left: 50%; 
+			    top: 50%; 
+			     transform: translate(-50%, -50%); 
+			    position: absolute;
+			    width: 100%;
+			   text-align: center;
+
+			}*/
+
+			.wrapper_1{
+				top: 5vh;
+				left: 4vh;
+			}
+
+			.wrapper_2{
+				top: 22vh;
+				left: 4vh;
+			}
+
+			.wrapper_3{
+				top: 39vh;
+				left: 4vh;
+			}
+			.wrapper_4{
+				top: 55vh;
+				left: 4vh;
+			}

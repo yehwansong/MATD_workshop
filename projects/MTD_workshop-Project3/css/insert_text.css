@@ -1,0 +1,18 @@
+	@font-face {
+                font-family: 'Crazy-Variable';
+                src: url("../font/Crazy-Variable.woff2") format('woff2-variations');
+            }
+  
+  .element {
+  				font-family: 'Crazy-Variable';
+			    line-height:1;
+			    font-size: 175px;
+			    color: white;
+			    font-variation-settings: 'wght' 100;
+			   	
+  				}
+
+	
+	.wrapper{
+				white-space: nowrap;
+			}

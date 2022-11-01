@@ -1,0 +1,20 @@
+			@font-face {
+                font-family: 'pixelVF';
+                src:url("../font/pixelVF.woff2") format('woff2');
+            }
+            .element{
+  				font-family: 'pixelVF';
+			    line-height:0.75;
+			    font-size: 9vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 300;
+                color: #505050;
+/*
+                text-shadow: 1px 1px 20px honeydew;
+                transition: 0.5s cubic-bezier(.99,-0.01,0,1))
+*/
+
+			}
+			.wrapper{
+				white-space: normal;
+			}

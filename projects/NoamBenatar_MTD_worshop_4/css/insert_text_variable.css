@@ -1,0 +1,28 @@
+			@font-face {
+                font-family: 'Psyri';
+                src: url("../font/PsyriVF.woff2") format('woff2-variations');
+            }
+
+           	body{
+				background: rgb(255,20,0);
+           	}
+            .element {
+  				font-family: 'Psyri';
+			    line-height:1;
+			    font-size: 14vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 400;
+			    text-align: center;
+			    color: white;
+			}
+			
+			.wrapper{
+				hite-space: nowrap;
+			}
+
+			.wrapper_1{
+				top: calc(50% - 6.5vw);
+			}
+			.wrapper_2{
+				top: calc(50% + 6.5vw);
+			}

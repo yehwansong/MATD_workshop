@@ -1,0 +1,18 @@
+	@font-face {
+                font-family: 'Mixing-Variable';
+                src: url("../font/Mixing-Variable.woff2") format('woff2-variations');
+            }
+  
+  .element {
+  				font-family: 'Mixing-Variable';
+			    line-height:1;
+			    font-size: 500px;
+			    color: white;
+			    font-variation-settings: 'wght' 100;
+			   	
+  				}
+
+	
+	.wrapper{
+				white-space: nowrap;
+			}

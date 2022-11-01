@@ -1,0 +1,34 @@
+
+            @font-face {
+                font-family: 'NarkissBlock-VF';
+                src: url("../font/NarkissBlock-VF.woff2") format('woff2-variations');
+            }
+            body{
+            	background: darkblue;
+
+            }
+            *{
+			    font-family: 'NarkissBlock-VF';
+			    line-height:1;
+			    font-size: 35vw;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 900, 'wdth' 125;
+
+			}
+			.wrapper{
+				white-space: nowrap;
+			}
+			.wrapper_1 .element{
+				color: red;
+			    transition-delay: 0.07s;
+			}
+			.wrapper_2 .element{
+				color: yellow;
+			    transition-delay: 0.03s;
+			}
+			.wrapper_3 .element{
+				color: white;
+				transition-delay: 0s cubic-bezier(.17,.67,.83,.67);
+			}
+
+			*/

@@ -1,0 +1,32 @@
+
+            /*@font-face {
+                font-family: 'Cabin-VariableFont';
+                src: url("../font/Cabin-VariableFont.woff2") format('woff2');
+            }
+            {
+			    font-family: 'Cabin-VariableFont';
+			    line-height:1;
+			    font-size: 8px;
+			    color:#00000 ;
+			   
+			}
+			.wrapper{
+				white-space: nowrap;*/
+
+
+			}
+
+			@font-face {
+                font-family: 'zoomGX';
+                src: url("../font/*zoomGX.woff2") format('woff2');
+            }
+            .element {
+  				font-family: 'zoomGX';
+			    line-height:1;
+			    font-size: 35px;
+			    letter-spacing: 0;
+			    font-variation-settings: 'wght' 100
+			}
+			.wrapper{
+				white-space: nowrap;
+			}

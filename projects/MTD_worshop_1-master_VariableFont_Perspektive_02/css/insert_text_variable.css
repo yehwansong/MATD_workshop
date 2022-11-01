@@ -1,0 +1,52 @@
+ @font-face {
+    font-family: 'A_VariableVF';
+    src: url("../font/A_VariableVF.woff2") format('woff2');
+}
+*{
+    font-family: 'A_VariableVF';
+    line-height:1;
+    font-size: 270px;
+    color: whitesmoke;
+    font-variation-settings:"wght" 700
+
+}
+.wrapper{
+    white-space: nowrap;
+    height: 300px; 
+}
+body{
+    background: black;
+    transform-style: preserve-3d;
+    position: absolute;
+    perspective: 700px;
+    overflow: visible;
+
+
+    transform: scale(0.75);
+}
+
+			
+.element{
+   position: relative;
+    display: inline-block
+			}
+.wrapper_1{
+}
+.wrapper_3{
+    transform-origin: bottom;
+    transform: translate(-50%, -50%) translateY(-400px) rotateX(-90deg);
+}
+
+.wrapper_4{
+    transform-origin: bottom;
+    transform: translate(-50%, -50%) translateY(-400px) rotateX(-90deg);
+}
+.wrapper_5{
+    transform: translate(-50%, -50%) translateY(400px) rotateX(90deg);
+    transform-origin: top;
+}
+.wrapper_6{
+    transform: translate(-50%, -50%) translateY(400px) rotateX(90deg);
+    transform-origin: top;
+}
+
